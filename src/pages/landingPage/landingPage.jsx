@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/heroSection/navbar/navbar';
+import heroImg from "../../assets/landingPage/heroSection/heroImg.svg"
 import whiteCurveImage from "../../assets/landingPage/aboutSection/whiteCurveAsset.svg";
 import blueStripOne from "../../assets/landingPage/aboutSection/blueStripOne.svg";
 import blueStripTwo from "../../assets/landingPage/aboutSection/blueStripTwo.svg";
@@ -22,16 +23,30 @@ import cardSevenImg from "../../assets/landingPage/offerSection/cardSevenImg.svg
 import cardEightImg from "../../assets/landingPage/offerSection/cardEightImg.svg";
 import cardNineImg from "../../assets/landingPage/offerSection/cardNineImg.svg";
 
+//clients assets
+import yunusLogo from "../../assets/landingPage/clientsSection/yunus.svg";
+import changanLogo from "../../assets/landingPage/clientsSection/changan.svg";
+import gulahmedLogo from "../../assets/landingPage/clientsSection/gulahmed.svg";
 
+//Footer assets:
+import logoFooter from "../../assets/landingPage/footerSection/logoFooter.svg";
 
 import ImageComponent from '../../components/aboutSection/imageComponent/imageComponent';
 import TextComponent from '../../components/aboutSection/textComponent/textComponent';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import "./landingPage.css";
 import "./aboutSection.css";
 import "./heroSection.css";
 import "./whatWeOffer.css";
+import "./footerStrip.css";
+import "./ourClients.css";
+import "./footerSection.css";
+
+
+
 import Card from '../../components/whatWeOfferSection/card/card';
+import ClientCard from '../../components/clientsSection/card/clientCard';
 
 
 const LandingPage = () => {
@@ -83,6 +98,21 @@ const LandingPage = () => {
             txt : "General Order Supplying",
         }
     ]);
+
+    const [clientsLogos] = useState([
+        {
+            logo : gulahmedLogo
+        },
+        {
+            logo : yunusLogo
+        },
+        {
+            logo : changanLogo
+        },
+        {
+            logo : changanLogo
+        }
+    ])
     
   return (
     <div className='landingPageContainer'>
@@ -148,9 +178,39 @@ const LandingPage = () => {
 
             </div>
         </div>
-        <div className="clientsSection">clientsSection</div>
-        <div className="footerSection">footerSection</div>
-        <div className="footerStrip">footerStrip</div>
+        <div className="clientsSection">
+            <div className="ourClientsHeader flex-col">
+                <h1>Our Clients</h1>
+                <div className="line"></div>
+            </div>
+            <div className="ourClientsContent">
+                {
+                    clientsLogos.map((logo) => <ClientCard key = {logo.logo} logo = {logo}/>)
+                }
+            </div>
+        </div>
+        <div className="footerSection">
+                <div className="footerContent">
+                    <div className='footerCard'><img src = {logoFooter} alt = ''/></div>
+                    <div className='footerCard'>
+                        <h4>Contact:</h4>
+                        <p>+92 3003333791</p>
+                    </div>
+                    <div className='footerCard'>
+                        <h4>Email:</h4>
+                        <p>enterprises.ose@gmail.com</p>
+                    </div>
+                    <div className='footerCard'>
+                        <h4>Address:</h4>
+                        <p>B123 Block J N.Nazimabad, Block 2</p>
+                    </div>
+                    <div className='footerCard'>
+                        <h4>Socials:</h4>
+                        <div><LinkedInIcon style = {{fontSize : "35px"}}/></div>
+                    </div>
+                </div>
+        </div>
+        <div className="footerStrip flex"><h3>One Step Enterprises 2022. All rights reserved.</h3></div>
     </div>
   )
 }

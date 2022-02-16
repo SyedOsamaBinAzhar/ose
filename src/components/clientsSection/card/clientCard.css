@@ -1,0 +1,13 @@
+.clientImgStyles{
+    height: 100%;
+    width: 100%;
+}
+.clientCardStyles{
+    border: 1px solid red;
+    height: 150px;
+    background-color: #F9F9FC;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+}

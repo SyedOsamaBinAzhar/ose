@@ -4,7 +4,7 @@
 }
 .navItemsCont{
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: absolute;
     right : 6%;
     top : 7%;

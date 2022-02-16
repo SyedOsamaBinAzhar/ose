@@ -1,0 +1,26 @@
+.clientsSection{
+    display: grid;
+    grid-template-rows: minmax(15vh, min-content) minmax(45vh, min-content);
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-areas: ". ourClientsHeader ."
+                        ". ourClientsContent .";
+}
+.ourClientsHeader {
+    grid-area: ourClientsHeader;
+    background-color: aqua;
+}
+.ourClientsHeader h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 67px;
+    color: #FFFFFF;
+    font-family: Inter;
+}
+.ourClientsContent {
+    grid-area: ourClientsContent;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2.5rem;
+    /* z-index: 1; */
+}

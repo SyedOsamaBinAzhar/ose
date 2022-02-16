@@ -1,0 +1,40 @@
+.footerSection{
+    display: grid;
+    grid-template-rows: minmax(25vh, min-content);
+    background: rgba(28, 35, 64, 0.8);
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-areas: ". footerContent .";
+}
+.footerContent{
+    grid-area: footerContent;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    z-index: 1;
+}
+.footerCard{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-flow: column;
+    text-align: left;
+}
+.footerCard p{
+    color : #1C2340;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 24px;
+}
+.footerCard h4{
+    color : #1C2340;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 24px;
+}
+.icon{
+    transform: scale(2.8);
+}

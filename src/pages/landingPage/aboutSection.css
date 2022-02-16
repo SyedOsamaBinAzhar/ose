@@ -1,0 +1,37 @@
+.aboutSection {
+    display: grid;
+    grid-template-rows: minmax(30vh, min-content) minmax(70vh, min-content);
+    grid-template-columns: 5vw 89vw 6vw;
+    grid-template-areas: ". headingRow ."
+                        ". contentRow .";
+}
+.headingRow{
+grid-area: headingRow;
+/* background-color: orange; */
+}
+.headingRow h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 67px;
+    color: #FFFFFF;
+}
+.line {
+    width : 200px;
+    height : 5px;
+    background-color: #91C53D;
+}
+.headingRow p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+    color: #F9F9FC;
+    margin-top: 5px;
+}
+.contentRow{
+grid-area: contentRow;
+background-color: purple;
+}

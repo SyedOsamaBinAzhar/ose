@@ -1,3 +1,5 @@
+/* MAKING GRIDS OVER HERE */
+
 .landingPageContainer {
     display: grid;
     grid-template-rows: minmax(80vh, min-content) minmax(100vh, min-content) minmax(140vh, min-content) minmax(50vh, min-content) minmax(50vh, min-content) minmax(5vh, min-content);
@@ -14,39 +16,8 @@
     position: relative;
     grid-area: heroSection;
     background-color: aquamarine;
-    display: grid;
-    grid-template-rows: minmax(15vh, min-content) minmax(65vh, min-content);
-    grid-template-columns: 5vw 89vw 6vw;
-    grid-template-areas: ". navbarCont ."
-                        ". contentCont .";
-    /* background-image: url("../../assets/landingPage/heroSection/heroImage.svg"); */
-    /* background-size: 100% 100%, cover; */
-    /* background: rgba(28, 35, 64, 0.8); */
 }
-.navbarCont{
-    grid-area: navbarCont;
-    background-color: brown;
-}
-.contentCont{
-    grid-area: contentCont;
-    background-color: pink;
-}
-.contentCont h1 {
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 4rem;
-    text-align: center;
-    color: #FFFFFF;
-}
-.contentCont p {
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #FFFFFF;
-    border: 1px solid black;
-    margin-top: 27px;
-}
+
 .aboutSection{
     grid-area: aboutSection;
     background-color: red;

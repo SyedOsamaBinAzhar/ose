@@ -1,0 +1,52 @@
+.landingPageContainer {
+    display: grid;
+    grid-template-rows: minmax(80vh, min-content) minmax(100vh, min-content) minmax(140vh, min-content) minmax(50vh, min-content) minmax(50vh, min-content) minmax(5vh, min-content);
+    grid-template-columns: 100vw;
+    background-color: aqua;
+    grid-template-areas: "heroSection"
+                        "aboutSection"
+                        "whatWeOfferSection"
+                        "clientsSection"
+                        "footerSection"
+                        "footerStrip";
+}
+.heroSection{
+    grid-area: heroSection;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: minmax(20vh, min-content) minmax(60vh, min-content);
+    grid-template-columns: 5vw 89vw 6vw;
+    grid-template-areas: ". navbarCont ."
+                        ". contentCont .";
+    /* background-image: url("../../assets/landingPage/heroSection/heroImage.svg"); */
+    /* background-size: 100% 100%, cover; */
+    /* background: rgba(28, 35, 64, 0.8); */
+}
+.navbarCont{
+    grid-area: navbarCont;
+    background-color: brown;
+}
+.contentCont{
+    grid-area: contentCont;
+    background-color: pink;
+}
+.aboutSection{
+    grid-area: aboutSection;
+    background-color: red;
+}
+.whatWeOfferSection{
+    grid-area: whatWeOfferSection;
+    background-color: orange;
+}
+.clientsSection{
+    grid-area: clientsSection;
+    background-color: purple;
+}
+.footerSection{
+    grid-area: footerSection;
+    background-color: pink;
+}
+.footerStrip{
+    grid-area: footerStrip;
+    background-color: blue;
+}

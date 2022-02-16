@@ -1,0 +1,24 @@
+.navbarCont{
+    display: flex;
+
+}
+.navItemsCont{
+    display: flex;
+    background-color: aqua;
+    position: absolute;
+    right : 6%;
+    top : 5%;
+}
+li {
+    list-style: none;
+    font-size: 2rem;
+    margin-left: 40px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+li:hover{
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}

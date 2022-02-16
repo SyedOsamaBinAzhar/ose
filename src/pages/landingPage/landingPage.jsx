@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../components/heroSection/navbar';
+import Navbar from '../../components/heroSection/navbar/navbar';
 import "./landingPage.css";
 
 const LandingPage = () => {

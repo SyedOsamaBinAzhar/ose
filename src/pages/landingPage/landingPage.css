@@ -11,10 +11,11 @@
                         "footerStrip";
 }
 .heroSection{
+    position: relative;
     grid-area: heroSection;
     background-color: aquamarine;
     display: grid;
-    grid-template-rows: minmax(20vh, min-content) minmax(60vh, min-content);
+    grid-template-rows: minmax(15vh, min-content) minmax(65vh, min-content);
     grid-template-columns: 5vw 89vw 6vw;
     grid-template-areas: ". navbarCont ."
                         ". contentCont .";

@@ -108,22 +108,19 @@ const LandingPage = () => {
         },
         {
             logo : changanLogo
-        },
-        {
-            logo : changanLogo
         }
     ])
     
   return (
     <div className='landingPageContainer'>
-        <div className="heroSection">
+        <div className="heroSection" id="heroCont">
             <div className="navbarCont"><Navbar/></div>
-            <div className="contentCont flex-col">
+            <div className="contentCont">
                 <h1>One Step Enterprises</h1>
                 <p>Deals in : All kinds of industrail tools, fabrics, garments accessories, CMT manufacturing & general order suppliers .</p>
             </div>
         </div>
-        <div className="aboutSection">
+        <div className="aboutSection" id = "aboutCont">
             <img src = {whiteCurveImage} className = 'whiteCurveImgStyles' alt=''/>
             <img src = {blueStripOne} className = 'blueStripOneStyles' alt=''/>
             <img src = {blueStripTwo} className = 'blueStripTwoStyles' alt=''/>
@@ -161,7 +158,7 @@ const LandingPage = () => {
                 </div>
             </div>
         </div>
-        <div className="whatWeOfferSection">
+        <div className="whatWeOfferSection" id = "offerCont">
             <img src = {ellipseOne} className = 'ellipseOne' alt=''/>
             <img src = {ellipseTwo} className = 'ellipseTwo' alt=''/>
 
@@ -178,7 +175,7 @@ const LandingPage = () => {
 
             </div>
         </div>
-        <div className="clientsSection">
+        <div className="clientsSection" id = "clientsCont">
             <div className="ourClientsHeader flex-col">
                 <h1>Our Clients</h1>
                 <div className="line"></div>
@@ -189,7 +186,7 @@ const LandingPage = () => {
                 }
             </div>
         </div>
-        <div className="footerSection">
+        <div className="footerSection" id = "contactCont">
                 <div className="footerContent">
                     <div className='footerCard'><img src = {logoFooter} alt = ''/></div>
                     <div className='footerCard'>

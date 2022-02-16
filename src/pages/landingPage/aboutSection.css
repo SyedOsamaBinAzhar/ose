@@ -1,7 +1,7 @@
 .aboutSection {
     display: grid;
     grid-template-rows: minmax(45vh, min-content) minmax(110vh, min-content);
-    /* background: rgba(28, 35, 64, 0.8); */
+    background: #1c2340;
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-areas: ". headingRow ."
                         ". contentRow .";

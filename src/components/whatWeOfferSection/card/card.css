@@ -1,5 +1,4 @@
 .cardStyles{
-    border: 1px solid brown;
     border-radius: 30px;
     height: 25rem;
     margin-bottom: 20px;
@@ -14,7 +13,6 @@
     text-align: left;
     position: absolute;
     color : white;
-    border: 1px solid black;
     margin-top: 170px;
     margin-left: 20px;
 }

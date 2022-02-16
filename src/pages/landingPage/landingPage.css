@@ -2,8 +2,7 @@
 
 .landingPageContainer {
     display: grid;
-    background-image: url("../../assets/landingPage/heroSection/heroImg.svg");
-    grid-template-rows: minmax(80vh, min-content) minmax(140vh, min-content) minmax(170vh, min-content) minmax(65vh, min-content) minmax(25vh, min-content) minmax(5vh, min-content);
+    grid-template-rows: minmax(80vh, min-content) minmax(140vh, min-content) minmax(170vh, min-content) minmax(55vh, min-content) minmax(25vh, min-content) minmax(5vh, min-content);
     grid-template-columns: 100vw;
     /* background-color: aqua; */
     grid-template-areas: "heroSection"
@@ -21,21 +20,16 @@
 
 .aboutSection{
     grid-area: aboutSection;
-    background-color: red;
 }
 .whatWeOfferSection{
     grid-area: whatWeOfferSection;
-    background-color: orange;
 }
 .clientsSection{
     grid-area: clientsSection;
-    background-color: purple;
 }
 .footerSection{
     grid-area: footerSection;
-    background-color: pink;
 }
 .footerStrip{
     grid-area: footerStrip;
-    background-color: blue;
 }

@@ -1,13 +1,13 @@
 .clientsSection{
     display: grid;
-    grid-template-rows: minmax(15vh, min-content) minmax(45vh, min-content);
+    background-color: #1c2340;
+    grid-template-rows: minmax(15vh, min-content) minmax(40vh, min-content);
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-areas: ". ourClientsHeader ."
                         ". ourClientsContent .";
 }
 .ourClientsHeader {
     grid-area: ourClientsHeader;
-    background-color: aqua;
 }
 .ourClientsHeader h1 {
     font-weight: 700;
@@ -18,7 +18,6 @@
 }
 .ourClientsContent {
     grid-area: ourClientsContent;
-    background-color: blue;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2.5rem;

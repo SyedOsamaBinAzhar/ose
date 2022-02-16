@@ -1,5 +1,6 @@
 .heroSection{
     display: grid;
+    background-image: url("../../assets/landingPage/heroSection/heroImg.svg");
     grid-template-rows: minmax(15vh, min-content) minmax(65vh, min-content);
     grid-template-columns: 5vw 89vw 6vw;
     grid-template-areas: ". navbarCont ."
@@ -7,11 +8,10 @@
 }
 .navbarCont{
     grid-area: navbarCont;
-    background-color: brown;
 }
 .contentCont{
     grid-area: contentCont;
-    background-color: pink;
+    text-align: center;
 }
 .contentCont h1 {
     font-family: Inter;
@@ -19,6 +19,7 @@
     font-size: 4rem;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 50px;
 }
 .contentCont p {
     font-family: Inter;
@@ -26,6 +27,5 @@
     font-size: 1.5rem;
     text-align: center;
     color: #FFFFFF;
-    border: 1px solid black;
     margin-top: 27px;
 }

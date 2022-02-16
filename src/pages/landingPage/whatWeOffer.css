@@ -1,14 +1,13 @@
 .whatWeOfferSection{
     display: grid;
+    background-color: #1c2340;
     grid-template-rows: minmax(60vh, min-content) minmax(110vh, min-content);
-    background: rgba(28, 35, 64, 0.8);
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-areas: ". whatWeOfferHeader ."
                         ". whatWeOfferContentContainer .";
 }
 .whatWeOfferHeader {
     grid-area: whatWeOfferHeader;
-    background-color: aqua;
 }
 .whatWeOfferHeader h1 {
     font-family: Inter;
@@ -36,7 +35,6 @@
 
 .whatWeOfferContentContainer {
     grid-area: whatWeOfferContentContainer;
-    /* background-color: orange; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;

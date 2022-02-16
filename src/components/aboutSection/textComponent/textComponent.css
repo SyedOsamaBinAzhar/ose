@@ -1,0 +1,30 @@
+.textComponentContainer{
+    /* border: 1px solid black; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+
+}
+.headingAndLineContainer{
+    /* background-color: aqua; */
+}
+.headingAndLineContainer h1 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+.textComponentContainer p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: #F9F9FC;
+    margin-top: 10px;
+}
+.missionLine{
+    height: 5px;
+    width: 27px;
+    background-color: #91C53D;
+}

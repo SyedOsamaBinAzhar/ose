@@ -2,7 +2,7 @@
 
 .landingPageContainer {
     display: grid;
-    grid-template-rows: minmax(80vh, min-content) minmax(100vh, min-content) minmax(140vh, min-content) minmax(50vh, min-content) minmax(50vh, min-content) minmax(5vh, min-content);
+    grid-template-rows: minmax(80vh, min-content) minmax(140vh, min-content) minmax(170vh, min-content) minmax(50vh, min-content) minmax(50vh, min-content) minmax(5vh, min-content);
     grid-template-columns: 100vw;
     background-color: aqua;
     grid-template-areas: "heroSection"

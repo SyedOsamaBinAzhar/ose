@@ -1,13 +1,13 @@
 .aboutSection {
     display: grid;
-    grid-template-rows: minmax(30vh, min-content) minmax(70vh, min-content);
-    grid-template-columns: 5vw 89vw 6vw;
+    grid-template-rows: minmax(45vh, min-content) minmax(110vh, min-content);
+    background: rgba(28, 35, 64, 0.8);
+    grid-template-columns: 10vw 80vw 10vw;
     grid-template-areas: ". headingRow ."
                         ". contentRow .";
 }
 .headingRow{
-grid-area: headingRow;
-/* background-color: orange; */
+    grid-area: headingRow;
 }
 .headingRow h1 {
     font-family: Inter;
@@ -29,9 +29,68 @@ grid-area: headingRow;
     line-height: 30px;
     text-align: center;
     color: #F9F9FC;
-    margin-top: 5px;
+    margin-top: 15px;
+    width : 75%;
 }
 .contentRow{
-grid-area: contentRow;
-background-color: purple;
+    grid-area: contentRow;
+    /* background-color: purple; */
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 80vw;
+    grid-template-areas: "rowOne"
+                        "rowTwo";
+}
+.rowOne{
+    grid-area: rowOne;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "rowOneColOne rowOneColTwo";
+}
+.rowOneColOne{
+    grid-area: rowOneColOne;
+    /* background-color: violet; */
+    padding : 10px;
+    
+}
+.rowOneColTwo{
+    grid-area: rowOneColTwo;
+    /* background-color: palegoldenrod; */
+}
+.rowTwo{
+    grid-area: rowTwo;
+    /* background-color: pink; */
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "rowTwoColOne rowTwoColTwo";
+}
+.rowTwoColOne{
+    grid-area: rowTwoColOne;
+    /* background-color: grey; */
+}
+.rowTwoColTwo{
+    grid-area: rowTwoColTwo;
+    /* background-color: green; */
+    padding : 10px;
+
+}
+.whiteCurveImgStyles{
+    position: absolute;
+    right : 0;
+    height : 220px;
+    top : 95%;
+}
+.blueStripOneStyles{
+    position: absolute;
+    top: 98%;
+}
+.blueStripTwoStyles{
+    position: absolute;
+    right : 0%;
+    top : 210%;
+}
+.greenAsset{
+    position: absolute;
+    top: 230%;
 }

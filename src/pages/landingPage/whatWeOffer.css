@@ -1,0 +1,59 @@
+.whatWeOfferSection{
+    display: grid;
+    grid-template-rows: minmax(60vh, min-content) minmax(110vh, min-content);
+    background: rgba(28, 35, 64, 0.8);
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-areas: ". whatWeOfferHeader ."
+                        ". whatWeOfferContentContainer .";
+}
+.whatWeOfferHeader {
+    grid-area: whatWeOfferHeader;
+    background-color: aqua;
+}
+.whatWeOfferHeader h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 67px;
+    color: #FFFFFF;
+}
+.line {
+    width : 200px;
+    height : 5px;
+    background-color: #91C53D;
+}
+.whatWeOfferHeader p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+    color: #F9F9FC;
+    margin-top: 15px;
+    width : 75%;
+}
+
+.whatWeOfferContentContainer {
+    grid-area: whatWeOfferContentContainer;
+    /* background-color: orange; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    z-index: 1;
+
+}
+.ellipseOne{
+    position: absolute;
+    right : 0;
+    height: 45rem;
+    top : 310%;
+    z-index: 1;
+}
+.ellipseTwo{
+    position: absolute;
+    left : 0;
+    height: 35rem;
+    top : 415%;
+    z-index: 1;
+}

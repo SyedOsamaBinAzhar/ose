@@ -116,10 +116,26 @@ const LandingPage = () => {
   useEffect(() => {
   }, [hamState])
   
+  const handleHamStatus = () => {
+    setHamState(!hamState);
+  }
 
   return (
     hamState ?
-    <div className='mobSideBar'></div>
+    <div className='mobSideBar'>
+          <div className="mobHamLineCont" onClick={handleHamStatus}>
+            <div className="mobHamLine1"></div>
+            <div className="mobHamLine2"></div>
+            <div className="mobHamLine3"></div>
+          </div>
+          <div className='mobSideBarItemsCont'>
+          <a href="#heroCont" onClick={handleHamStatus}><li>Home</li></a>
+          <a href="#aboutCont" onClick={handleHamStatus}><li>About Us</li></a>
+          <a href="#offerCont" onClick={handleHamStatus}><li>What We Offer</li></a>
+          <a href="#clientsCont" onClick={handleHamStatus}><li>Our Clients</li></a>
+          <a href="#contactCont"onClick={handleHamStatus}><li>Contact Us</li></a>
+          </div>
+    </div>
     :
     <div className='landingPageContainer'>
         <div className="heroSection" id="heroCont">

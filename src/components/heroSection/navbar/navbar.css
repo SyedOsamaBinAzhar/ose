@@ -20,7 +20,7 @@ li:hover{
     cursor: pointer;
     transition: 0.1s ease-in-out;
 }
-a {
+.navItemsCont a {
     text-decoration: none;
     display: block;
 }
@@ -43,7 +43,7 @@ a {
         display: block;
         cursor: pointer;
     }
-    a {
+    .navItemsCont a {
         text-decoration: none;
         display: none;
     }

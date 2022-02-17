@@ -6,7 +6,6 @@ import logo from "../../../assets/landingPage/heroSection/logoNav.svg";
 const Navbar = ({setHamState, hamState}) => {
 
   const handleHamStatus = () => {
-    console.log(hamState);
     setHamState(!hamState);
   }
 

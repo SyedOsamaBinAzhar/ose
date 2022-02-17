@@ -55,3 +55,18 @@
     top : 415%;
     z-index: 1;
 }
+@media only screen and (max-width: 860px) {
+    .ellipseOne{
+        position: absolute;
+        top : 380%;
+        z-index: 1;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .ellipseOne{
+        display: none;
+    }
+    .ellipseTwo{
+        display: none;
+    }
+}

@@ -1,12 +1,7 @@
 .textComponentContainer{
-    /* border: 1px solid black; */
-    padding-left: 20px;
+    padding-left: 20px;  
     padding-right: 20px;
     padding-top: 35px;
-
-}
-.headingAndLineContainer{
-    /* background-color: aqua; */
 }
 .headingAndLineContainer h1 {
     font-family: Inter;
@@ -27,4 +22,11 @@
     height: 5px;
     width: 27px;
     background-color: #91C53D;
+}
+
+@media only screen and (max-width: 580px) {
+    .headingAndLineContainer{
+        display: flex;
+        justify-content: center;
+    }
 }

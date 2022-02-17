@@ -19,7 +19,6 @@
 .line {
     width : 200px;
     height : 5px;
-    background-color: #91C53D;
 }
 .headingRow p {
     font-family: Poppins;
@@ -34,7 +33,6 @@
 }
 .contentRow{
     grid-area: contentRow;
-    /* background-color: purple; */
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 80vw;
@@ -43,7 +41,6 @@
 }
 .rowOne{
     grid-area: rowOne;
-    /* background-color: blue; */
     display: grid;
     grid-template-columns: 45% 55%;
     grid-template-areas: "rowOneColOne rowOneColTwo";
@@ -93,4 +90,119 @@
 .greenAsset{
     position: absolute;
     top: 230%;
+}
+@media only screen and (max-width: 1220px) {
+    .aboutSection {
+        display: grid;
+        grid-template-columns: 0vw 100vw 0vw;
+        grid-template-areas: ". headingRow ."
+                            ". contentRow .";
+    }
+    .contentRow{
+        grid-area: contentRow;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-areas: "rowOne"
+                            "rowTwo";
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .aboutSection {
+        display: grid;
+        grid-template-rows: minmax(45vh, min-content) minmax(135vh, min-content);
+        background: #1c2340;
+        grid-template-areas: ". headingRow ."
+                            ". contentRow .";
+    }
+    .rowTwo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "rowTwoColOne rowTwoColTwo";
+    }
+    .rowOne{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "rowOneColOne rowOneColTwo";
+    }
+    .greenAsset{
+        position: absolute;
+        top: 260%;
+    }
+    .blueStripTwoStyles{
+        position: absolute;
+        top: 230%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .rowOne{
+        grid-area: rowOne;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "rowOneColOne rowOneColTwo";
+    }
+    .rowTwo{
+        grid-area: rowTwo;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: "rowTwoColOne rowTwoColTwo";
+    }   
+    
+}
+@media only screen and (max-width: 860px) {
+    .contentRow{
+        grid-area: contentRow;
+        display: grid;
+        grid-template-rows: minmax(80vh, min-content) minmax(80vh, min-content);
+        grid-template-columns: 100vw;
+        grid-template-areas: "rowOne"
+                            "rowTwo"; 
+    }
+    .rowOne{
+        grid-area: rowOne;
+        display: grid;
+        grid-template-rows: minmax(40vh, min-content) minmax(40vh, min-content);
+        grid-template-columns: 100vw;
+        grid-template-areas: "rowOneColTwo" 
+                            "rowOneColOne";
+    }
+    .rowOneColTwo{
+        text-align: center;
+    }
+    .rowTwoColOne{
+        text-align: center;
+    }
+    .rowTwo{
+        grid-area: rowTwo;
+        display: grid;
+        grid-template-rows: minmax(40vh, min-content) minmax(40vh, min-content);
+        grid-template-columns: 100vw;
+        grid-template-areas: "rowTwoColOne" 
+                            "rowTwoColTwo";
+    }
+    .greenAsset{
+        position: absolute;
+        top: 320%;
+    }
+    .blueStripTwoStyles{
+        position: absolute;
+        right : 0%;
+        top : 280%;
+        /* height: 200px; */
+    }
+}
+@media only screen and (max-width: 580px) {
+    .blueStripTwoStyles{
+        display: none;
+    }
+    .greenAsset{
+        display: none;
+    }    
+}
+@media only screen and (max-width: 715px) {
+    .whiteCurveImgStyles{
+        display: none;
+    }
+    .blueStripOneStyles{
+        display: none;
+    }
 }

@@ -11,3 +11,8 @@ color: #F9F9FC;
 .footerStrip {
     background-color : #1C2340;
 }
+@media only screen and (max-width: 350px) {
+    .footerStrip h3{
+        font-size: 12px;
+    }
+}

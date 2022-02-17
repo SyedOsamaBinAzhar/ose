@@ -117,7 +117,10 @@ const LandingPage = () => {
             <div className="navbarCont"><Navbar/></div>
             <div className="contentCont">
                 <h1>One Step Enterprises</h1>
-                <p>Deals in : All kinds of industrail tools, fabrics, garments accessories, CMT manufacturing & general order suppliers .</p>
+                <div className='heroParas'>
+                <p>Deals in : All kinds of industrail tools, fabrics, garments accessories,</p>
+                <p>CMT manufacturing & general order suppliers.</p>
+                </div>
             </div>
         </div>
         <div className="aboutSection" id = "aboutCont">
@@ -190,20 +193,29 @@ const LandingPage = () => {
                 <div className="footerContent">
                     <div className='footerCard'><img src = {logoFooter} alt = ''/></div>
                     <div className='footerCard'>
-                        <h4>Contact:</h4>
-                        <p>+92 3003333791</p>
+                        <div className="footerCardDetails">
+                            <h4>Contact:</h4>
+                            <p>+92 3003333791</p>
+                        </div>
                     </div>
                     <div className='footerCard'>
-                        <h4>Email:</h4>
-                        <p>enterprises.ose@gmail.com</p>
+                        <div className="footerCardDetails">
+                            <h4>Email:</h4>
+                            <p>enterprises.ose@gmail.com</p>
+                        </div>
                     </div>
                     <div className='footerCard'>
-                        <h4>Address:</h4>
-                        <p>B123 Block J N.Nazimabad, Block 2</p>
+                        <div className="footerCardDetails">
+                            <h4>Address:</h4>
+                            <p>B123 Block J N.Nazimabad, Block 22222222222</p>
+                        </div>
                     </div>
                     <div className='footerCard'>
-                        <h4>Socials:</h4>
-                        <div><LinkedInIcon style = {{fontSize : "35px"}}/></div>
+                        <div className="footerCardDetails">
+                            <h4>Socials:</h4>
+                            <div><LinkedInIcon style = {{fontSize : "35px", cursor : 'pointer'}}/></div>
+                        </div>
+                        
                     </div>
                 </div>
         </div>

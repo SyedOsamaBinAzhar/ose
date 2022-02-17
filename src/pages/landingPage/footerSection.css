@@ -14,9 +14,11 @@
 }
 .footerCard{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-flow: column;
     text-align: left;
+    height: 15rem;
+
 }
 .footerCard p{
     color : #1C2340;
@@ -24,6 +26,7 @@
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 24px;
+    width: 180px;
 }
 .footerCard h4{
     color : #1C2340;
@@ -31,4 +34,17 @@
     font-weight: 600;
     font-size: 2rem;
     line-height: 24px;
+}
+.footerCardDetails{
+    position: absolute;
+    margin-top : 4%;
+}
+
+@media only screen and (max-width: 350px) {
+    .footerCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

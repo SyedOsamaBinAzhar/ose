@@ -28,3 +28,9 @@ html {
     align-items: center;
     flex-flow: row;
 }
+
+@media only screen and (max-width: 462px) {
+    html {
+        font-size: 57.5%;
+    }
+}

@@ -1,12 +1,10 @@
 .navbarCont{
     display: flex;
-
 }
 .navItemsCont{
     display: flex;
-    /* background-color: aqua; */
     position: absolute;
-    right : 6%;
+    right : 9%;
     top : 7%;
 }
 li {
@@ -24,4 +22,36 @@ li:hover{
 }
 a {
     text-decoration: none;
+    display: block;
 }
+
+@media only screen and (max-width: 960px) {
+    li{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 790px) {
+    li{
+        font-size: 1.1rem;
+    }
+}
+ @media only screen and (max-width: 680px) {
+    .hamLine{
+        display: block;
+    }
+    .hamLineCont{
+        display: block;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        display: none;
+    }
+    .hamLine{
+    width: 50px;
+    height: 5px;
+    background-color: #91C53D;
+    /* display: none; */
+    margin-top: 8px;
+} 
+} 

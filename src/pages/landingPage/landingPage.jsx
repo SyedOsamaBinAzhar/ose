@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../../components/heroSection/navbar/navbar';
 import heroImg from "../../assets/landingPage/heroSection/heroImg.svg"
 import whiteCurveImage from "../../assets/landingPage/aboutSection/whiteCurveAsset.svg";
@@ -42,7 +42,7 @@ import "./whatWeOffer.css";
 import "./footerStrip.css";
 import "./ourClients.css";
 import "./footerSection.css";
-
+import "./mobSideBar.css";
 
 
 import Card from '../../components/whatWeOfferSection/card/card';
@@ -110,11 +110,22 @@ const LandingPage = () => {
             logo : changanLogo
         }
     ])
-    
+
+  const [hamState, setHamState] = useState(false);
+
+  useEffect(() => {
+  }, [hamState])
+  
+
   return (
+    hamState ?
+    <div className='mobSideBar'></div>
+    :
     <div className='landingPageContainer'>
         <div className="heroSection" id="heroCont">
-            <div className="navbarCont"><Navbar/></div>
+            <div className="navbarCont">
+                <Navbar setHamState = {setHamState} hamState = {hamState}/>
+            </div>
             <div className="contentCont">
                 <h1>One Step Enterprises</h1>
                 <div className='heroParas'>
@@ -128,8 +139,6 @@ const LandingPage = () => {
             <img src = {blueStripOne} className = 'blueStripOneStyles' alt=''/>
             <img src = {blueStripTwo} className = 'blueStripTwoStyles' alt=''/>
             <img src = {greenAsset} className = 'greenAsset' alt=''/>
-
-
 
             <div className="headingRow flex-col">
                 <h1>About Us</h1>
@@ -172,7 +181,7 @@ const LandingPage = () => {
             </div>
             <div className="whatWeOfferContentContainer">
                 {
-                    cardData.map((card) => <Card data = {card}/>)
+                    cardData.map((card) => <Card data = {card} key={card.index}/>)
                 }
                 
 

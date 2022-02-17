@@ -3,7 +3,6 @@ import "./clientCard.css";
 
 const ClientCard = ({logo}) => {
 
-    console.log(logo)
     const img = logo.logo;
   return (
     <div className='clientCardStyles'>

@@ -39,7 +39,7 @@
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;
     z-index: 1;
-
+    margin-top: 20px;
 }
 .ellipseOne{
     position: absolute;

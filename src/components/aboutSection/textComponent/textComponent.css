@@ -24,7 +24,7 @@
     background-color: #91C53D;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 860px) {
     .headingAndLineContainer{
         display: flex;
         justify-content: center;

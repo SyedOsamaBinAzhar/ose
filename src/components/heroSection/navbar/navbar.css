@@ -4,12 +4,12 @@
 .navItemsCont{
     display: flex;
     position: absolute;
-    right : 9%;
+    right : 10%;
     top : 7%;
 }
 li {
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-left: 40px;
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
@@ -55,3 +55,22 @@ li:hover{
     margin-top: 8px;
 } 
 } 
+
+@media only screen and (max-width: 450px) {
+.navLogoStyles{
+        height: 110px;
+        width: 130px;
+        position: absolute;
+        left: 4%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .hamLine{
+    width: 40px;
+ }
+ .navLogoStyles{
+    left: 4%;
+    top: 3%;
+} 
+}

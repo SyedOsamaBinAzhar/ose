@@ -232,13 +232,13 @@ const LandingPage = () => {
                     <div className='footerCard'>
                         <div className="footerCardDetails">
                             <h4>Address:</h4>
-                            <p>B123 Block J N.Nazimabad, Block 22222222222</p>
+                            <p>B-16/F-22, Eastern Film Studio Compound, Manghopir Road, S.I.T.E., Karachi, Pakistan</p>
                         </div>
                     </div>
                     <div className='footerCard'>
                         <div className="footerCardDetails">
                             <h4>Socials:</h4>
-                            <div><LinkedInIcon style = {{fontSize : "35px", cursor : 'pointer'}}/></div>
+                            <div><a href='https://www.linkedin.com/company/81704476/admin/'><LinkedInIcon style = {{fontSize : "35px", cursor : 'pointer'}}/></a></div>
                         </div>
                         
                     </div>

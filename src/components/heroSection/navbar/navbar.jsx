@@ -12,7 +12,7 @@ const Navbar = ({setHamState, hamState}) => {
   return (
     <div className='navbarCont'>
         <div className="logoCont">
-            <img src= {logo} alt = ''/>
+            <img src= {logo} alt = '' className='navLogoStyles'/>
         </div>
         <div className="navItemsCont">
           <div className="hamLineCont" onClick={handleHamStatus}>

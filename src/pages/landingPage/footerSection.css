@@ -1,6 +1,6 @@
 .footerSection{
     display: grid;
-    grid-template-rows: minmax(25vh, min-content);
+    grid-template-rows: minmax(30vh, min-content);
     background: #F9F9FC;
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-areas: ". footerContent .";
@@ -8,7 +8,7 @@
 .footerContent{
     grid-area: footerContent;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     grid-gap: 1rem;
     z-index: 1;
 }
@@ -17,7 +17,8 @@
     /* justify-content: center; */
     flex-flow: column;
     text-align: left;
-    height: 15rem;
+    height: 17rem;
+
 }
 .footerCard p{
     color : #1C2340;
@@ -38,13 +39,19 @@
     position: absolute;
     margin-top : 4%;
 }
+.footerCardDetails a {
+    text-decoration: none;
+    color: #1C2340;
+}
 
-@media only screen and (max-width: 350px) {
+
+
+@media only screen and (max-width: 440px) {
     .footerCard{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 10rem;
+        height: 12rem;
     }
 }
